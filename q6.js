@@ -1,9 +1,8 @@
-let array = [1, 2, 3, 4, 5, 4, 6, 4]
+let n = 1249302
 
-let Repete = array.reduce()
+let nString = n.toString()
 
-function MaiorRepeticao (array){
-        for(const i of array){
+let arrayNumeroString = nString.split("")
 
-        }
-}
+console.log(arrayNumeroString)
+
