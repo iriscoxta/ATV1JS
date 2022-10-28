@@ -1,6 +1,6 @@
 let array = ['Iris', 'Isac', 'Jonas', 'JP']
 
-let n = 4
+let n = 1
 
 function MostraPrimeiroElemnto(n){
 
