@@ -1,7 +1,22 @@
-const array = [1, 2, 3, 4, 5, 4, 6];
-var RemoveDuplicados = array.filter(RemoveDuplicados);
-console.log(RemoveDuplicados);
+let array = ['a', '1', '2', '3', 'c', 'B', 'A', '2'];
 
-function RemoveDuplicados(value, index, self) { 
-    return self.indexOf(value) === index;
+
+function upper(value){
+        if(typeof value == 'string') return value.toUpperCase()
+        else return value
 }
+
+let arrayNovo = array.map(upper)
+console.log(array)
+console.log(arrayNovo)
+
+
+for( let aux = 0; aux < array.length; aux++){
+
+        for( let i = aux+1; i < array.length; i++){
+
+                if(array[aux] == array[i]) array.splice(i, 1)
+        }
+}
+
+console.log(array)
